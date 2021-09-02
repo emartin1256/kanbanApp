@@ -6,11 +6,13 @@ my_choices = (
     ('ongoing', 'inProgres'),
     ('done', 'done'),
 )
-# Create your models here.
+
+
 class Task(models.Model):
     title = models.TextField()
     status = models.TextField()
     date = models.DateField()
+
 
 def __str__(self):
     return self.title
