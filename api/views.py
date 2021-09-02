@@ -10,7 +10,7 @@ from .models import my_choices
 # Create your views here.
 
 @api_view(['GET'])
-def apiOverview(request):
+def apiOverview():
     api_urls = {
         'List': '/task-list/',
         'Create': '/task-create/',
@@ -20,7 +20,7 @@ def apiOverview(request):
     return Response(api_urls)
 
 @api_view(['GET'])
-def taskList(request):
+def taskList():
     tasks = Task.objects.all()
     serializer = TaskSerializer(tasks, many=True)
     return Response(serializer.data)
@@ -41,7 +41,7 @@ def taskUpdate(request, pk):
     return Response(serializer.data)
 
 @api_view(['DELETE'])
-def taskDelete(request, pk):
+def taskDelete(pk):
     task = Task.objects.get(id=pk)
     task.delete()
     return Response('deleted')
