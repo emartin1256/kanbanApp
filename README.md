@@ -21,6 +21,7 @@ The tasks are stored as JSON objects with the following properties: id, title, s
 ### Create
 Tasks are created when a user fills out the text field in a column. Upon submitting that task, axios sends an HTTP request to our REST api and triggers a POST query.
 ![](https://github.com/emartin1256/kanbanApp/blob/main/screenshots/post.png)
+<img src="https://github.com/emartin1256/kanbanApp/blob/main/screenshots/post.png" width="200"/>
 ### Read
 Once the user opens the app, axios triggers a GET query, which returns an array of JSON objects which are then iterated through and rendered as task cards on the board.
 ![](https://github.com/emartin1256/kanbanApp/blob/main/screenshots/get.png)
