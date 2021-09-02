@@ -28,3 +28,4 @@ When a user drags a task card to another column, the status property of the JSON
 Each task card is also rendered with a delete button which has an onClick function to trigger a DELETE query.
 
 ![](https://github.com/emartin1256/kanbanApp/blob/main/screenshots/add.gif)
+![](https://github.com/emartin1256/kanbanApp/blob/main/screenshots/delete.gif)
