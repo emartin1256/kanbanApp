@@ -26,3 +26,5 @@ Once the user opens the app, axios triggers a GET query, which returns an array 
 When a user drags a task card to another column, the status property of the JSON object must be updated to reflect this. Axios sends an HTTP request to our REST api and triggers a PUT query stating the new status.
 ### Delete
 Each task card is also rendered with a delete button which has an onClick function to trigger a DELETE query.
+
+![](https://github.com/emartin1256/kanbanApp/blob/main/screenshots/add.gif)
